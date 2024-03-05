@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hesap_makinesi_backend": {
+      "main": "src/hesap_makinesi_backend/main.mo",
+      "type": "motoko"
+    },
+    "hesap_makinesi_frontend": {
+      "dependencies": [
+        "hesap_makinesi_backend"
+      ],
+      "source": [
+        "src/hesap_makinesi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hesap_makinesi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
